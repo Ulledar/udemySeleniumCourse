@@ -27,6 +27,7 @@ public class BasePage {
         return element;
     }
 
+//  Check if Auth is available
     public void isAuthWidgetPresent(){
         WebElement authFrame = driver.findElement(authWidget);
         waitElementIsVisible(authFrame);
