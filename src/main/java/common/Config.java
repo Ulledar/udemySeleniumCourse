@@ -6,8 +6,11 @@ public class Config {
     public static final String PLATFORM_AND_BROWSER = "CHROME_WINDOWS";
 
 //  Clean Browser cookies
-    public static final Boolean CLEAR_COOKIES = true;
+    public static final Boolean CLEAR_COOKIES = false;
 
 //  Close browser or not
     public static final Boolean HOLD_BROWSER_OPEN = false;
+
+//  Clear screenshots in build.reports folder before starting the build
+    public static final Boolean CLEAR_REPORTS_DIR = true;
 }
