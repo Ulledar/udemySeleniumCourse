@@ -32,23 +32,23 @@ public class BaseTest {
     protected MobilePhoneReplenishmentPage mobilePhoneReplenishmentPage = new MobilePhoneReplenishmentPage(driver);
     private static final Logger LOGGER = LoggerFactory.getLogger(BaseTest.class);
 
-    @BeforeAll
-    void deleteOldLogs() {
-        LOGGER.info("START TIME:" + LocalTime.now());
-        LOGGER.info("Start clear reports dir: build/reports...");
-
-        File allureResults = new File("allure-results");
-        if (allureResults.isDirectory()) {
-            for (File item: Objects.requireNonNull(allureResults.listFiles()))
-                item.delete();
-        }
-
-        File screenshots = new File("build/reports/test_screenshots");
-        if (CLEAR_REPORTS_DIR) {
-            for (File item: Objects.requireNonNull(screenshots.listFiles()))
-                item.delete();
-        }
-    }
+//    @BeforeAll
+//    void deleteOldLogs() {
+//        LOGGER.info("START TIME:" + LocalTime.now());
+//        LOGGER.info("Start clear reports dir: build/reports...");
+//
+//        File allureResults = new File("allure-results");
+//        if (allureResults.isDirectory()) {
+//            for (File item: Objects.requireNonNull(allureResults.listFiles()))
+//                item.delete();
+//        }
+//
+//        File screenshots = new File("build/reports/test_screenshots");
+//        if (CLEAR_REPORTS_DIR) {
+//            for (File item: Objects.requireNonNull(screenshots.listFiles()))
+//                item.delete();
+//        }
+//    }
 
     @AfterEach
     void clearCookiesAndLocalStorage() {
